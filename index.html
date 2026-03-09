@@ -26,10 +26,9 @@
   <main>
     <!-- ========== 1. Hero ========== -->
     <section class="hero">
-      <div class="hero__bg-shapes">
-        <div class="hero__shape hero__shape--1"></div>
-        <div class="hero__shape hero__shape--2"></div>
-        <div class="hero__shape hero__shape--3"></div>
+      <div class="hero__bg-image">
+        <img src="images/hero.jpg" alt="農園で笑顔の家族がじゃがいもを植えている様子" class="hero__photo">
+        <div class="hero__overlay"></div>
       </div>
       <div class="container hero__inner">
         <div class="hero__badges">
@@ -48,6 +47,15 @@
           <i class="fab fa-line"></i> 今すぐスクールに申し込む 🥔
         </a>
         <p class="hero__note">※ 公式LINEから簡単にお申し込みいただけます</p>
+      </div>
+    </section>
+
+    <!-- ========== Photo Gallery Strip ========== -->
+    <section class="gallery-strip">
+      <div class="gallery-strip__inner">
+        <img src="images/gallery-1.jpg" alt="子どもが土を掘っている様子" class="gallery-strip__img">
+        <img src="images/gallery-2.jpg" alt="じゃがいもの芽が出ている畑" class="gallery-strip__img">
+        <img src="images/gallery-3.jpg" alt="収穫したじゃがいもを持つ子どもの手" class="gallery-strip__img">
       </div>
     </section>
 
@@ -129,10 +137,12 @@
               <span class="program-card__round">第1回</span>
               <span class="program-card__month">3月</span>
             </div>
+            <div class="program-card__img">
+              <img src="images/program-planting.jpg" alt="種芋を畑の土に植え付けている親子の手元" class="program-card__photo">
+            </div>
             <div class="program-card__body">
               <h3 class="program-card__title">始まりは土の中から<br>「植え付け体験」</h3>
               <p class="program-card__desc">種芋の植え付けを体験します。土に触れ、命の始まりを感じる瞬間です。</p>
-              <div class="program-card__icon">🥔</div>
             </div>
           </div>
           <div class="program-card fade-in">
@@ -140,10 +150,12 @@
               <span class="program-card__round">第2回</span>
               <span class="program-card__month">4月</span>
             </div>
+            <div class="program-card__img">
+              <img src="images/program-sprout.jpg" alt="じゃがいもの芽かき作業をしている子どもとスタッフ" class="program-card__photo">
+            </div>
             <div class="program-card__body">
               <h3 class="program-card__title">美味しさの秘密を知る<br>「芽かき体験」</h3>
               <p class="program-card__desc">芽かき（間引き）作業を体験。なぜ芽かきが必要なのか、おいしさの秘密を学びます。</p>
-              <div class="program-card__icon">🌱</div>
             </div>
           </div>
           <div class="program-card fade-in">
@@ -151,10 +163,12 @@
               <span class="program-card__round">第3回</span>
               <span class="program-card__month">6月</span>
             </div>
+            <div class="program-card__img">
+              <img src="images/program-harvest.jpg" alt="収穫したじゃがいもをカゴに入れて喜ぶ家族" class="program-card__photo">
+            </div>
             <div class="program-card__body">
               <h3 class="program-card__title">待ちに待ったフィナーレ<br>「収穫祭」</h3>
               <p class="program-card__desc">いよいよ収穫！自分で育てたじゃがいもをお持ち帰りいただけます。</p>
-              <div class="program-card__icon">🎉</div>
             </div>
           </div>
         </div>
@@ -240,6 +254,9 @@
       <div class="container">
         <h2 class="section__title">mino-LLとは？</h2>
         <div class="about-farm">
+          <div class="about-farm__photo-wrap fade-in">
+            <img src="images/farm-overview.jpg" alt="mino-LL ファミリーシェア農園の全体風景" class="about-farm__photo">
+          </div>
           <div class="about-farm__content">
             <p class="about-farm__intro">愛知県豊川市にある<strong>ファミリーシェア農園</strong>です。<br>ご家族で気軽に農業体験を楽しんでいただける農園として、多くのご家族にご利用いただいています。</p>
             <div class="about-farm__badges">

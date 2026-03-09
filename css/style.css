@@ -270,48 +270,35 @@ ul {
 .hero {
   position: relative;
   padding: 8rem 0 5rem;
-  background: linear-gradient(160deg, #e8f5e9 0%, #c8e6c9 30%, #faf8f3 100%);
   overflow: hidden;
   min-height: 90vh;
   display: flex;
   align-items: center;
+  background: var(--color-light-green);
 }
 
-.hero__bg-shapes {
+.hero__bg-image {
   position: absolute;
   inset: 0;
-  pointer-events: none;
-  overflow: hidden;
+  z-index: 0;
 }
 
-.hero__shape {
+.hero__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__overlay {
   position: absolute;
-  border-radius: 50%;
-  opacity: 0.15;
-}
-
-.hero__shape--1 {
-  width: 400px;
-  height: 400px;
-  background: var(--color-primary);
-  top: -100px;
-  right: -100px;
-}
-
-.hero__shape--2 {
-  width: 250px;
-  height: 250px;
-  background: var(--color-accent);
-  bottom: -50px;
-  left: -80px;
-}
-
-.hero__shape--3 {
-  width: 180px;
-  height: 180px;
-  background: var(--color-primary);
-  bottom: 20%;
-  right: 10%;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(232, 245, 233, 0.88) 0%,
+    rgba(255, 255, 255, 0.75) 50%,
+    rgba(250, 248, 243, 0.85) 100%
+  );
 }
 
 .hero__inner {
@@ -493,6 +480,25 @@ ul {
   font-size: 0.9rem;
 }
 
+.program-card__img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--color-light-green);
+}
+
+.program-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition);
+}
+
+.program-card:hover .program-card__photo {
+  transform: scale(1.05);
+}
+
 .program-card__body {
   padding: 1.5rem;
   position: relative;
@@ -508,14 +514,6 @@ ul {
 .program-card__desc {
   color: var(--color-text-mid);
   font-size: 0.95rem;
-}
-
-.program-card__icon {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2.5rem;
-  opacity: 0.3;
 }
 
 /* ========================================
@@ -648,9 +646,24 @@ ul {
    About Farm (mino-LLとは？)
    ======================================== */
 .about-farm {
-  max-width: 700px;
+  max-width: 800px;
   margin: 2rem auto 0;
   text-align: center;
+}
+
+.about-farm__photo-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  max-height: 360px;
+}
+
+.about-farm__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-farm__intro {
@@ -795,6 +808,32 @@ ul {
 }
 
 /* ========================================
+   Gallery Strip
+   ======================================== */
+.gallery-strip {
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.gallery-strip__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.gallery-strip__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition);
+}
+
+.gallery-strip__img:hover {
+  transform: scale(1.05);
+}
+
+/* ========================================
    Fade-in Animation
    ======================================== */
 .fade-in {
@@ -824,6 +863,14 @@ ul {
 
   .hero__title {
     font-size: clamp(1.6rem, 6vw, 2.5rem);
+  }
+
+  .gallery-strip__img {
+    height: 120px;
+  }
+
+  .program-card__img {
+    height: 150px;
   }
 
   .pain-points {
@@ -882,6 +929,14 @@ ul {
 
   .hero {
     min-height: 85vh;
+  }
+
+  .gallery-strip__img {
+    height: 260px;
+  }
+
+  .program-card__img {
+    height: 200px;
   }
 }
 
