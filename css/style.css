@@ -643,6 +643,99 @@ ul {
 }
 
 /* ========================================
+   Requirements extras
+   ======================================== */
+.requirements__location-detail {
+  font-size: 0.9rem;
+  color: var(--color-text-mid);
+}
+
+.requirements__location-note {
+  font-size: 0.8rem;
+  color: var(--color-text-mid);
+  margin-top: 0.25rem;
+}
+
+.requirements__schedule-note {
+  font-size: 0.8rem;
+  color: var(--color-text-mid);
+  margin-top: 0.5rem;
+}
+
+/* ========================================
+   FAQ
+   ======================================== */
+.faq-list {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.faq-item__q {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  list-style: none;
+  transition: background var(--transition);
+}
+
+.faq-item__q::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item__q::after {
+  content: '+';
+  margin-left: auto;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-item__q::after {
+  transform: rotate(45deg);
+}
+
+.faq-item__q:hover {
+  background: var(--color-light-green);
+}
+
+.faq-item__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.faq-item__a {
+  padding: 0 1.5rem 1.25rem 4rem;
+  color: var(--color-text-mid);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* ========================================
    About Farm (mino-LLとは？)
    ======================================== */
 .about-farm {
