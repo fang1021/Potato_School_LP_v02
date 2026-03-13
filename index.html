@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>春のじゃがいも栽培スクール｜ファミリーシェア農園 mino-LL</title>
   <meta name="description" content="豊川市のファミリーシェア農園 mino-LL が贈る、春のじゃがいも栽培スクール。植え付けから収穫まで全3回の体験プログラム。限定10組募集中！">
-  <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
+  <link rel="preload" as="image" href="images/hero-mobile.webp" type="image/webp" media="(max-width: 767px)">
+  <link rel="preload" as="image" href="images/hero.webp" type="image/webp" media="(min-width: 768px)">
   <link rel="stylesheet" href="css/style.css">
   <!-- Google Analytics (GA4) - deferred -->
   <script>
@@ -52,7 +53,10 @@
     <!-- ========== 1. Hero ========== -->
     <section class="hero">
       <div class="hero__bg-image">
-        <img src="images/hero.webp" alt="農園で笑顔の家族がじゃがいもを植えている様子" class="hero__photo" width="1200" height="669" fetchpriority="high">
+        <picture>
+          <source srcset="images/hero-mobile.webp" media="(max-width: 767px)" type="image/webp">
+          <img src="images/hero.webp" alt="農園で笑顔の家族がじゃがいもを植えている様子" class="hero__photo" width="1200" height="669" fetchpriority="high">
+        </picture>
         <div class="hero__overlay"></div>
       </div>
       <div class="container hero__inner">
