@@ -14,7 +14,7 @@
   --color-alert: #e53935;
   --color-alert-bg: #ffeaea;
 
-  --font-family: 'Noto Sans JP', sans-serif;
+  --font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif;
   --container-max: 1100px;
   --radius: 16px;
   --radius-pill: 100px;
