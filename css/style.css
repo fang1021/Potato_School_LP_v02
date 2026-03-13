@@ -927,6 +927,21 @@ ul {
 }
 
 /* ========================================
+   Inline SVG Icons
+   ======================================== */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.pain-point__icon .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ========================================
    Fade-in Animation
    ======================================== */
 .fade-in {
